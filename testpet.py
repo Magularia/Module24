@@ -20,10 +20,10 @@ def browser():
 
 def test_show_my_pets(browser):
     # Вводим email
-    browser.find_element(By.ID, 'email').send_keys('mag1@mail.ru')
+    browser.find_element(By.ID, 'email').send_keys(valid_email)
 
     # Вводим пароль
-    browser.find_element(By.ID, 'pass').send_keys('30052023N')
+    browser.find_element(By.ID, 'pass').send_keys(valid_password)
 
     # Нажимаем на кнопку входа в аккаунт
     submit_button = WebDriverWait(browser, 10).until(
